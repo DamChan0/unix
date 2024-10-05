@@ -1,0 +1,60 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "C/C++: memoryMapping 디버그",
+      "type": "cppdbg",
+      "request": "launch",
+      "program": "${workspaceFolder}/mmap/build/memoryMapping",
+      "args": [],
+      "stopAtEntry": false,
+      "cwd": "${workspaceFolder}",
+      "environment": [],
+      "externalConsole": false,
+      "MIMode": "gdb",
+      "setupCommands": [
+        {
+          "description": "Enable pretty-printing for gdb",
+          "text": "-enable-pretty-printing",
+          "ignoreFailures": true
+        }
+      ],
+      "miDebuggerPath": "/usr/bin/gdb",
+      "logging": {
+        "engineLogging": true
+      },
+      "launchCompleteCommand": "exec-run",
+      "debugServerPath": "",
+      "debugServerArgs": "",
+      "serverStarted": "",
+      "filterStdout": false,
+      "filterStderr": false,
+      "serverLaunchTimeout": 10000,
+      "internalConsoleOptions": "openOnSessionStart",
+      "coreDumpPath": "",
+      "windows": {
+        "MIMode": "gdb",
+        "miDebuggerPath": "C:\\MinGW\\bin\\gdb.exe"
+      }
+    },
+    {
+      "name": "C/C++ Runner: Debug Session",
+      "type": "cppdbg",
+      "request": "launch",
+      "args": [],
+      "stopAtEntry": false,
+      "externalConsole": false,
+      "cwd": "/home/dmkim/unix_study/semaphoreSYSV",
+      "program": "/home/dmkim/unix_study/semaphoreSYSV/build/Debug/outDebug",
+      "MIMode": "gdb",
+      "miDebuggerPath": "gdb",
+      "setupCommands": [
+        {
+          "description": "Enable pretty-printing for gdb",
+          "text": "-enable-pretty-printing",
+          "ignoreFailures": true
+        }
+      ]
+    }
+  ]
+}
